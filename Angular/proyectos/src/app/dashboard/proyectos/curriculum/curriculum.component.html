@@ -1,0 +1,118 @@
+<div class="mat-app-background">
+  <div>
+    <h1 style="padding-top: 1%;">curriculum</h1>
+  </div>
+  <div class="container">
+    <div class="presentacion">
+      <p>Desarrollador web junior con experiencia en el desarrollo de aplicaciones web utilizando <span>HTML, CSS, Angular, TypeScript y JavaScript</span>, familiarizado con herramientas como <span>Sass, 
+      Bootstrap y Git</span> para la creación  de interfaces intuitivas y atractivas. 
+      Asimismo, he colaborado con otros departamentos/clientes y he participado en garantizar la satisfacción y calidad de los proyectos desarrollados.</p>
+      <p>Tras <span>más de 8 años de experiencia profesional</span>, especialmente en el sector de la agricultura y el medioambiente, decidí dar un giro a mi carrera para explorar otra de 
+      mis pasiones: la informática y el desarrollo de aplicaciones. La apuesta por la digitalización del campo y los avances recientes, hicieron plantearme que una combinación 
+      de estas dos pasiones era posible.</p>
+      <p>Mi perfil junior en el desarrollo de aplicaciones web lo enriquezco con una amplia trayectoria profesional en diferentes ámbitos y roles que me han capacitado para el 
+      <span>trabajo tanto autónomo como en equipo, la gestión de múltiples tareas de diversa naturaleza, la resolución de problemas y, sobre todo, la capacidad de adaptación al cambio.</span> 
+      Me considero un buen compañero, una persona curiosa y con ganas de aprender cosas nuevas. <span>Me motivan los nuevos retos y siempre trato de devolver la confianza depositada
+       en mí con ilusión y trabajo</span>.</p>
+    </div>
+    <embed
+      src="../../../../assets/pdf/CV_JorgeFernandezEgea.pdf"
+      width="400vw"
+      height="596vh"
+      type="application/pdf"
+    />   
+    <div class="botones_contacto">
+      <a
+        href="mailto:jferegea@gmail.com?Subject=Escribe%20algún%20asunto&body=Escribe%20lo%20que%20quieras"
+        ><button mat-flat-button color="primary" style="margin: 15% 0%">
+          Escríbeme un correo
+        </button></a
+      >
+
+      <a [routerLink]="['/dashboard/@']"
+        ><button mat-flat-button color="accent" style="margin: 15% 0%">
+          Ir a contactos
+        </button></a
+      >
+
+      <a href="https://www.linkedin.com/in/jorgefernandezegea/"
+        ><button mat-flat-button color="warn" style="margin: 15% 0%">
+          LinkedIn
+        </button></a
+      >
+    </div>
+  </div>
+  <div>
+    <h1>mis proyectos</h1>
+  </div>
+  <div class="proyectos">
+    <div>
+      <h2>contacto</h2>
+      <div>
+        <a [routerLink]="['/dashboard/@']" target="marco"
+          ><button mat-flat-button color="primary">Previsualizar</button></a
+        >
+
+        <a [routerLink]="['/dashboard/@']" class="enlace"
+          ><button mat-flat-button color="accent">Ir al contenido</button></a
+        >
+      </div>
+    </div>
+    <div>
+      <h2>view transition</h2>
+      <div>
+        <button mat-flat-button color="primary">
+          <a [routerLink]="['/dashboard/VT']" target="marco">Previsualizar</a>
+        </button>
+
+        <a [routerLink]="['/dashboard/VT']" class="enlace"
+          ><button mat-flat-button color="accent">Ir al contenido</button></a
+        >
+      </div>
+    </div>
+    <div>
+      <h2>crud</h2>
+      <div>
+        <button mat-flat-button color="primary">
+          <a [routerLink]="['/dashboard/C']" target="marco">Previsualizar</a>
+        </button>
+
+        <a [routerLink]="['/dashboard/C']" class="enlace">
+          <button mat-flat-button color="accent">Ir al contenido</button></a
+        >
+      </div>
+    </div>
+    <div>
+      <h2>listado API</h2>
+      <div>
+        <a [routerLink]="['/dashboard/API']" target="marco"
+          ><button mat-flat-button color="primary">Previsualizar</button></a
+        >
+
+        <a [routerLink]="['/dashboard/API']" class="enlace"
+          ><button mat-flat-button color="accent">Ir al contenido</button></a
+        >
+      </div>
+    </div> 
+    <div>
+      <h2>Tienda (pendiente)</h2>
+      <div>
+        <a src="" target="marco"
+          ><button mat-flat-button color="primary">Previsualizar</button></a
+        >
+
+        <a src="" class="enlace"
+          ><button mat-flat-button color="accent">Ir al contenido</button></a
+        >
+      </div>
+    </div>   
+  </div>
+  <div class="marco">
+    <iframe
+      [routerLink]="['/dashboard/C']"
+      name="marco"
+      class="marco_ver"
+    ></iframe>
+  </div>
+  <br/><br/><br/><br/><br/><br/>
+</div>

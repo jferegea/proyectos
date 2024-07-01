@@ -1,0 +1,12 @@
+
+  @for (item of menuItems; track $index) {
+    <a
+    [routerLink]="item.path"
+    routerLinkActive="activo"
+    ><hr>
+    <div>
+      <span>{{item.title}}</span>
+    </div><hr>
+   </a>
+  }
+

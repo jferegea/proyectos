@@ -1,0 +1,26 @@
+.cambiar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.boton{
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
+}
+
+.enlace{
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.volver{
+  border-radius: 20px 5px;
+  box-shadow: 5px 5px 10px grey;
+  position: relative;
+  top: 10px;
+  left: 10px;  
+}

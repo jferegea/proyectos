@@ -1,0 +1,24 @@
+<div class="mat-app-background">
+  <a [routerLink]="['/dashboard/CV']"
+    ><button mat-flat-button color="warn" class="volver">
+      Volver al inicio
+    </button></a
+  >
+  <p style="padding-left: 10px;padding-top: 20px;"><b><u>Clicar en cada nombre</u></b></p>
+  <div class="container">
+    <ul>
+      @for (user of ListadoAPIService.users() ; track user.id) {
+        <ul>
+            <img [srcset]="user.avatar"
+              [alt]="user.first_name"
+            >
+            <a [routerLink]="['/dashboard/usuario', user.id]" class="perfil">
+              {{user.first_name}} {{user.last_name}}
+            </a>
+        </ul>
+      }@empty {
+        <h2>Cargando datos...</h2>
+      }
+    </ul>
+  </div>
+</div>

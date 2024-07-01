@@ -1,0 +1,21 @@
+<div class="mat-app-background">
+  <div class="lista">
+    @if (user()) {
+      <div>
+        <img [srcset]="user()!.avatar"
+        [alt]="user()!.first_name"
+        >
+      </div>
+      <div>
+        <h3>
+          {{user()?.first_name}} {{user()?.last_name}}
+        </h3>
+        <p>{{user()?.email}}</p>
+      </div>
+
+    }@else {
+      <p>Cargando informarción...</p>
+    }
+    <a [routerLink]="['/dashboard/API']" class="perfil"><button mat-raised-button color="primary" >Volver</button></a>
+  </div>
+</div>

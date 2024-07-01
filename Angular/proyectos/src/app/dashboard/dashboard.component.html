@@ -1,0 +1,42 @@
+@if (mostrar){
+<div class="container_superior">
+  <div style="display: flex; column-gap: 30px">
+    <div
+      class="cambiar_vertical"
+      (click)="menuCompleto()"
+      title="Modo vertical"
+    >
+      <mat-icon class="icono">arrow_back</mat-icon>
+    </div>
+    <div>
+      <a [routerLink]="['/dashboard/CV']" class="enlace"
+        ><img src="./assets/img/perfil.jpg" class="photo"
+      /></a>
+    </div>
+  </div>
+  <div class="nombre">
+    <h3>JORGE FERNÁNDEZ EGEA</h3>
+    <h5>Junior Developer</h5>
+  </div>
+  <div class="modo_oscuro">
+    <app-theme></app-theme>
+  </div>
+</div>
+<router-outlet></router-outlet>
+}@else{
+<div class="container_vertical">
+  <div
+    class="cambiar_horizontal"
+    (click)="menuCompleto()"
+    title="Modo horizontal"
+  >
+    <mat-icon class="icono">arrow_downward</mat-icon>
+  </div>
+  <div class="navegacion_oculta">
+    <app-sidemenu-oculto></app-sidemenu-oculto>
+  </div>
+  <div class="router_outlet_oculto">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+}

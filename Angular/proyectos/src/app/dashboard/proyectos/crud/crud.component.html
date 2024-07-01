@@ -1,0 +1,126 @@
+<div class="mat-app-background">
+  <div class="fondo">
+    <div class="conatainer-crud">
+      @defer () {
+      <app-heavy-loaders></app-heavy-loaders>
+      }@placeholder {
+      <div class="cargando">
+        <mat-spinner></mat-spinner>
+        <h1>Cargando...</h1>
+      </div>
+      }
+    </div>
+    <a [routerLink]="['/dashboard/CV']"><button mat-flat-button color="warn" class="volver">
+        Volver al inicio
+      </button></a>
+    <div class="bloque_datos">
+      <div class="datos">
+        <mat-form-field>
+          <mat-label>Nombre</mat-label>
+          <input matInput type="text" name="nombre" [(ngModel)]="nombre" [(ngModel)]="selectedPersona.nombre" required>
+          @if (nombre) {
+            <button matSuffix mat-icon-button aria-label="Clear" (click)="nombre=''"  [(ngModel)]="selectedPersona.apellidos">
+              <mat-icon>close</mat-icon>
+            </button>
+          }
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Apellidos</mat-label>
+          <input matInput type="text" [(ngModel)]="apellidos" [(ngModel)]="selectedPersona.apellidos" required>
+          @if (apellidos) {
+            <button matSuffix mat-icon-button aria-label="Clear" (click)="apellidos=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          }
+        </mat-form-field>
+        <mat-form-field style="width: 150px;">
+          <mat-label>Edad</mat-label>
+          <input matInput type="number" [(ngModel)]="edad" [(ngModel)]="selectedPersona.edad" required>
+          @if (edad) {
+            <button matSuffix mat-icon-button aria-label="Clear" (click)="edad=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          }
+        </mat-form-field>
+      </div>
+      <div class="datos">
+        <mat-form-field>
+          <mat-label>Estado Civil</mat-label>
+          <mat-select matInput type="text" [(ngModel)]="estadoCivil" [(ngModel)]="selectedPersona.estadoCivil" required>
+            <mat-option value=soltero>Soltero</mat-option>
+            <mat-option value=soltera>Soltera</mat-option>
+            <mat-option value=casado>Casado</mat-option>
+            <mat-option value=casada>Casada</mat-option>
+            <mat-option value=divorciado>Divorciado</mat-option>
+            <mat-option value=divorciada>Divorciada</mat-option>
+            <mat-option value=vidudo>Viudo</mat-option>
+            <mat-option value=viduda>Viuda</mat-option>
+          </mat-select>
+          @if (estadoCivil) {
+            <button matSuffix mat-icon-button aria-label="Clear" (click)="estadoCivil=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          }
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Ciudad</mat-label>
+          <input matInput type="text" [(ngModel)]="ciudad" [(ngModel)]="selectedPersona.ciudad" required>
+          @if (ciudad) {
+            <button matSuffix mat-icon-button aria-label="Clear" (click)="ciudad=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          }
+        </mat-form-field>
+        <mat-form-field style="width: 150px;">
+          <mat-label>Inscrito</mat-label>
+          <mat-select disableRipple [(ngModel)]="inscrito" [(ngModel)]="selectedPersona.inscrito" required>
+            <mat-option value=true>Si</mat-option>
+            <mat-option value=false>No</mat-option>
+          </mat-select>
+          @if (inscrito) {
+            <button matSuffix mat-icon-button aria-label="Clear" (click)="inscrito=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          }
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="botones">
+      <button mat-raised-button color="warn" type="reset" value="Borrar" (click)="borrarDatos()">
+        <mat-icon>clear</mat-icon>
+        Borrar
+      </button>
+      <button mat-raised-button color="primary" value="Agregar" (click)="agregarEditar()">
+        <mat-icon>add</mat-icon>
+        Agregar
+      </button>
+    </div>
+    <div class="table">
+      @for (persona of personasArray; track $index; let count = $count) {
+        <mat-accordion>
+          <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+              <mat-panel-title class="iconos">
+                <div>{{persona.id}}/{{count}} - {{persona.apellidos}}, {{persona.nombre}}</div>
+                <div>
+                  @if (selectedPersona.id !==0) {
+                    <button mat-icon-button color="warn" (click)="borrarPersona()">
+                      <mat-icon>clear</mat-icon>
+                    </button>
+
+                  }
+                  <button mat-icon-button color="primary" (click)="abrirEditar(persona)">
+                    <mat-icon>create</mat-icon>
+                  </button>
+                </div>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <li>Edad: {{persona.edad}}</li>
+            <li>Estado Civil: {{persona.estadoCivil}}</li>
+            <li>Ciudad: {{persona.ciudad}}</li>
+            <li>Inscrito: {{persona.inscrito}}</li>
+          </mat-expansion-panel>
+        </mat-accordion>}
+    </div>
+  </div>
+</div>

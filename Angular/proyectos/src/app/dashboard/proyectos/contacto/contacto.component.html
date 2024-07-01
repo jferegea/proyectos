@@ -1,0 +1,61 @@
+<div class="mat-app-background">  
+  <div class="fondo">
+    <a [routerLink]="['/dashboard/CV']"
+    ><button mat-flat-button color="warn" class="volver">
+      Volver al inicio
+    </button></a
+  >
+  <form class="container-contacto" action="https://formsubmit.co/f5a59a3d2b2538a197c52875508c6473" method="POST">
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Nombre</mat-label>
+      <input matInput placeholder="Ingrese su nombre" type="text" name="nombre" required>
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Apellido</mat-label>
+      <input matInput placeholder="Ingrese sus apellidos" type="text" name="apellido">
+      <mat-icon matSuffix>assignment_ind</mat-icon>
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Teléfono</mat-label>
+      <input matInput placeholder="Número de teléfono" type="number" name="telefono">
+      <mat-icon matSuffix>call</mat-icon>
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Correo electrónico</mat-label>
+      <input matInput placeholder="@" type="email" name="correo" required>
+      <mat-icon matSuffix>mail_outline</mat-icon>
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Comentarios</mat-label>
+      <textarea matInput type="text" name="comentarios"></textarea>
+      <mat-icon matSuffix>format_align_justify</mat-icon>
+    </mat-form-field>
+  </div>
+  <div class="botones">
+    <div>
+      <button mat-raised-button color="warn" type="reset" value="Borrar">
+        Borrar
+        <mat-icon matSuffix>clear</mat-icon>
+      </button>
+      </div>
+      <div>
+      <button mat-raised-button color="primary" type="submit" value="Enviar">
+        Enviar
+        <mat-icon matSuffix>celebration</mat-icon>
+      </button>
+    </div>
+  </div>
+</form>
+  </div>
+</div>
+

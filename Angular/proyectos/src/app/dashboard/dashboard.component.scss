@@ -1,0 +1,104 @@
+.container_superior{
+  display:flex;
+  justify-content: space-between;
+  color:aliceblue;
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  background: rgb(189, 189, 189);
+  background: linear-gradient(to right, rgba(2,0,36,1) 0%, rgb(0, 0, 0) 0%, rgb(30, 19, 190) 50%,  rgb(0, 0, 0) 100%);
+  background-size: 300% 100%;
+  z-index: 100;
+  animation: gradient 8s ease infinite;
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+}
+
+.cambiar_vertical{
+  background-color: black;
+  max-width: 20px;  
+  align-content: center;
+}
+
+.icono{
+  color:aliceblue; 
+}
+
+.photo{
+  max-width: 60px;
+  border-radius: 50%;  
+  box-shadow: 5px 5px 15px gray;
+  margin-top: 10%;
+}
+
+.nombre{
+  margin: auto;
+  text-align: center;
+}
+
+h5::before{
+  content:"\\";
+}
+h5::after{
+  content:'/';
+}
+
+.modo_oscuro{
+  display: flex;
+  align-items: center;
+  padding-right: 1%;
+}
+
+.container_vertical{
+  display: flex;
+}
+
+.cambiar_horizontal{
+  background-color: black;
+  width: 1.5vw;
+  height: 100vh;
+  align-content: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.navegacion_oculta{
+  width: 4vw;
+  color:aliceblue;
+  position: fixed;
+  height: 100vh;
+  left: 1.5vw;
+  padding-top: 1vw;
+  background: rgb(189, 189, 189);
+    background: linear-gradient(70deg, rgba(2,0,36,1) 0%, rgb(0, 0, 0) 0%, rgb(30, 19, 190) 50%,  rgb(0, 0, 0) 100%);
+    background-size: 300% 100%;
+    animation: gradient 8s ease infinite;
+    @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+    }
+}
+
+.router_outlet_oculto{
+  width: 94.5vw;
+  position: relative;
+  left: 5.5vw;
+}
+

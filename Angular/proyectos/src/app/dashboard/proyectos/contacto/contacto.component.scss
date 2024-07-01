@@ -1,0 +1,28 @@
+.fondo{
+  background: linear-gradient(rgb(0, 70, 128), rgb(209, 245, 248));
+}
+
+.container-contacto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  
+}
+
+.botones{
+  display: flex;
+  column-gap:10%;
+}
+
+mat-form-field{
+  width: 50vw;
+}
+
+.volver{
+  border-radius: 20px 5px;
+  box-shadow: 5px 5px 10px grey;
+  position: relative;
+  top: 10px;
+  left: 10px;  
+}

@@ -1,0 +1,79 @@
+.fondo{
+  height: 100vh;
+}
+
+.conatainer-crud{
+  margin:auto
+}
+
+.cargando{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.volver{
+  border-radius: 20px 5px;
+  box-shadow: 5px 5px 10px grey;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.bloque_datos{
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.datos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+mat-form-field{
+  width: 400px;
+}
+
+.botones{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+
+.table{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;  
+}
+
+mat-accordion{
+  width: 400px;
+  margin: 10px;
+}
+
+.iconos{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
