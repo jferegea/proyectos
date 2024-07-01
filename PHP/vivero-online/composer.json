@@ -1,0 +1,20 @@
+{
+    "name": "frikiplantas/vivero-online",
+    "description": "creacion de un vivero online",
+    "type": "proyecto",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jorge Fernández Egea",
+            "email": "jferegea@gmail.com"
+        }
+    ],
+    "require": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "frikiplantas\\":"src/"
+        }
+    }
+}
