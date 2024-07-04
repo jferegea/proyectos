@@ -1,0 +1,66 @@
+*{
+
+  background-image: url(img/cesped.jpg);
+
+  color:aliceblue;
+
+}
+
+                                                              /* Pantalla inicial */
+#titulo{                                                      
+  text-align: center;
+  font-size: 300%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  font-size: 75%;
+  font-family: cursive;
+}
+
+.menu {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  justify-content: center;
+}
+
+
+                                                                /* Botone */
+.enviar {
+  font-family:sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: rgb(95, 165, 236);
+  width: 15%;
+  border-radius: 12px;
+  border: 3px solid rgb(0, 0, 0);
+  margin: 8px;
+}
+
+                                                                /* Dorsales*/
+.dorsal {
+  font-size: 0.6rem;
+  margin-right: 0px;
+  width: 100%;
+  color: black;
+  text-align: center;
+}
+                                                                /* div */
+.pista {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(154, 153, 153);
+  margin: 2px;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+}
+                                                                /* Coches */
+.coches {
+  margin-left: 0px;
+  height: 74%;
+  width: 7%;
+}
