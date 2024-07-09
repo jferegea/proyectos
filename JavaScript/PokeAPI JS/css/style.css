@@ -1,0 +1,208 @@
+header{
+    background-color: rgb(221, 205, 58);
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    position:sticky;
+    top:0px;
+    margin-bottom: 2em;
+    box-shadow: 5px 5px 10px grey;
+    border-radius: 20px;
+}
+
+.logo{
+    height: 5em;
+    margin: auto;
+    padding-left: 1em;
+}
+
+nav{
+   display: flex;
+   margin-top: 2em;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;    
+    flex-wrap: wrap;
+    column-gap: 1em;
+    row-gap: 1em;
+    padding-top: 1em;
+}
+
+.boton{
+    border-radius: 20px 5px 15px 20px;
+    box-shadow: 5px 5px 10px grey;
+    font-size: 1em;
+    font-weight: bold;
+    width: 100px;
+    padding:10px;
+}
+
+#ver-todos{
+    background-color: black;
+    color:white;
+}
+
+#normal{
+    background-color: #A8A878;
+}
+
+#fire{
+    background-color: #EE812D;
+}
+
+#water{
+    background-color: #6790EF;
+    color:white;
+}
+
+#grass{
+    background-color: #77C751;
+}
+
+#electric{
+    background-color: #F5D233;
+}
+
+#ice{
+    background-color: #99D8D7;
+}
+
+#fighting{
+    background-color: #BF302A;
+    color:white;
+}
+
+#poison{
+    background-color: #9F409E;
+    color:white;
+}
+
+#ground{
+    background-color: #DDBE65;
+}
+
+#flying{
+    background-color: #AA8FF4;
+}
+
+#psychic{
+    background-color: #F75988;
+}
+
+#bug{
+    background-color: #A8B822;
+}
+
+#rock{
+    background-color: #BAA131;
+    color:white;
+}
+
+#ghost{
+    background-color: #745799;
+    color:white;
+}
+
+#dark{
+    background-color: #705849;
+    color:white;
+}
+
+#dragon{
+    background-color: #7537FE;
+    color:white;
+}
+
+#steel{
+    background-color: #B9B7D0;
+}
+
+#fairy{
+    background-color: #F4B6BD;
+}
+
+.lista{
+    display: flex;
+    flex-direction: column;
+}
+
+.paginacion{
+    display: flex;
+    margin: auto;
+    height: 2em;
+    gap:1em;
+    margin-bottom: 1em;
+}
+
+.navigation{
+    display: flex;
+    margin: auto;
+    gap:1em;
+    margin-bottom: 4em;
+}
+
+.navigation button{
+    background-color: black;
+    color:white;
+    box-shadow: 5px 5px 10px grey;
+    width: 2em;
+}
+
+.navigation button:hover{
+    color: red;
+}
+
+.numbers{
+    display: flex;
+    flex-wrap:  wrap;
+    gap:0.5em;
+}
+
+.pokemons{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.pokemon-card{
+    width: 10em;
+    height: 10em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    font-weight: bold;
+}
+
+.pokemon-card img{
+    width: 4em;
+    height: 4em;
+}
+
+.pokemon-card p{
+    text-transform: capitalize;
+    
+}
+
+.titulo{
+    display: flex;
+    column-gap:2em;
+}
+
+.titulo p{
+    margin: auto;
+    padding-bottom: 1em;
+}
+
+.nombre{
+    text-decoration: underline rgb(0, 0, 0);
+}
+
+.current button{
+    background-color: red;
+    color:black;
+    border-radius: 25px;
+} 
